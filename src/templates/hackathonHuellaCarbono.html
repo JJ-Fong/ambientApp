@@ -87,102 +87,67 @@
       <div class="tittle">
         Mi Casa
       </div>
-      <div class="casa">
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta"> 
-                  ¿En qué zona vives? 
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="zona" min="1" max="25"/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuántas personas viven en tu casa?  
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="fam" min="1" max="25"/>  
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuánto tiempo tardas en bañarte?  
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="time" value="1">5 Minutos<br/>
-                  <input type="radio" name="time" value="2">10 Minutos<br/>
-                  <input type="radio" name="time" value="3">15 Minutos<br/>
-                  <input type="radio" name="time" value="4">20 Minutos<br/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuándo salgo de un cuarto apago la luz?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="luz">Sí<br/>
-                  <input type="radio" name="luz">No
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="image">
-          <img src="/static/img/casa.png">
+      <div class="section">
+        <div class="preguntas casa">
+
+            <div class="pregunta"> 
+              ¿En qué zona vives? 
+            </div>
+            <div>
+              <input type="number" name="zona" min="1" max="25"/>
+            </div>
+
+            <div class="pregunta">
+              ¿Cuántas personas viven en tu casa?  
+            </div>
+            <div>
+              <input type="number" name="fam" min="1" max="25"/>  
+            </div>
+
+            <div class="pregunta">
+              ¿Cuánto tiempo tardas en bañarte?  
+            </div>
+            <div>
+              <input type="radio" name="time" value="1">5 Minutos<br/>
+              <input type="radio" name="time" value="2">10 Minutos<br/>
+              <input type="radio" name="time" value="3">15 Minutos<br/>
+              <input type="radio" name="time" value="4">20 Minutos<br/>
+            </div>
+
+            <div class="pregunta">
+              ¿Cuándo salgo de un cuarto apago la luz?
+            </div>
+            <div>
+              <input type="radio" name="luz">Sí<br/>
+              <input type="radio" name="luz">No
+            </div>
+            
+          </div>
+          <div class="image">
+            <img src="/static/img/casa.png">
+          </div>
         </div>
       </div>
     </div>
     <div>
-      <div class="tittle">
-        Mi Transporte
-      </div>
-      <div>
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuántos vehiculos hay en tu casa?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="autos" min="1" max="25"/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cómo llegas a la escuela?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="escuela">A pie o en bicicleta<br/>
-                  <input type="radio" name="escuela">Bus Escolar o Transporte Publico<br/>
-                  <input type="radio" name="escuela">En carro<br/>
-                </div>
-              </td>
-            </tr>
-          </table>
+      <div class="preguntas transporte">
+
+          <div class="pregunta">
+            ¿Cuántos vehiculos hay en tu casa?
+          </div>
+          <div>
+            <input type="number" name="autos" min="1" max="25"/>
+          </div>
+
+          <div class="pregunta">
+            ¿Cómo llegas a la escuela?
+          </div>
+          <div>
+            <input type="radio" name="escuela">A pie o en bicicleta<br/>
+            <input type="radio" name="escuela">Bus Escolar o Transporte Publico<br/>
+            <input type="radio" name="escuela">En carro<br/>
+          </div>
+
         </div>
         <div class="image">
           <img src="/static/img/auto.png">
