@@ -1,0 +1,46 @@
+header{
+	background: #8fd206;
+    min-height: 140px;
+}
+
+.user-label{
+	color:white;
+	font-size:20px;
+	border-right:1px solid white;
+	padding-right:10px;
+}
+
+.container-header{
+	padding-top:30px;
+}
+
+.left-header-link{
+	border-right:1px solid white;
+}
+
+a {
+	color: white;
+	padding: 0 10px;
+	font-size: 20px;
+}
+
+.container {
+	text-align: right;
+}
+
+nav{
+	background-color: black;
+}
+
+.main-menu{
+	background: #3b3b3b;
+	box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75)
+	padding; 1.2em 0;
+	position: relative;
+	text-align: center;
+	top: -1em;
+}
+
+.menu-item{
+	width: 33.2%;
+}

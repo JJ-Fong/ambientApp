@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			Log In
+		</title>
+	</head>
+	<body>
+		{% if messages %}
+			<ul class="messages">
+		    	{% for message in messages %}
+		    		<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+		    	{% endfor %}
+			</ul>
+		{% endif %}
+		<form method='POST' action=''>
+			{% csrf_token %} 
+			<input class="input-text" id="id_usuario" maxlength="120" name="usuario" type="text" placeholder="Usuario o Correo Registrado" />
+			</br>	
+			<input class="input-text" id="id_password" maxlength="12" name="password" type="password" placeholder="Constraseña" />
+			</br>	
+			
+			<input type="submit" value='Ingresar'/>
+			
+		</form>
+	</body>
+
+	<style>
+		.input-text{
+			width: 400px;
+		}
+	</style>
+
+</html>

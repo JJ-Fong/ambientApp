@@ -1,0 +1,26 @@
+.tittle{
+  font-size: 45px;
+  font-style: verdana;
+}
+.casa{
+  display: inline-block;
+  width: 100%;
+}
+.preguntas{
+  float: left;
+  width: 50%;
+}
+.image{
+  padding: 20px;
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+.pregunta{
+  font-size: 20px;
+  font-style: verdana;
+}
+.td{
+  padding: 10px;
+  width: 50%;
+}
