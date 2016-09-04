@@ -1,169 +1,210 @@
+{% include "hackathonHeader.html" %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>High Scores</title>
-	<meta charset="UTF-8">
+	<!--meta charset="UTF-8"-->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/hackathon-home.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
 	<link rel="stylesheet" href="/static/css/styleScores.css">
 </head>
 <body>
-	<h1>Resultados de la Semana</h1>
-	<table>
-		<thead>
-			<th>
-				Posición
-			</th>
-			<th>
-				Usuario
-			</th>
-			<th>
-				Resultado
-			</th>
-			<th>
-				Fecha
-			</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>
-					1
-				</td>
-				<td>
-					user1
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					2
-				</td>
-				<td>
-					user2
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					3
-				</td>
-				<td>
-					user3
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					4
-				</td>
-				<td>
-					user4
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					5
-				</td>
-				<td>
-					user5
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					6
-				</td>
-				<td>
-					user6
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					7
-				</td>
-				<td>
-					user7
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					8
-				</td>
-				<td>
-					user8
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					9
-				</td>
-				<td>
-					user9
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-			<tr>
-				<td>
-					10
-				</td>
-				<td>
-					user10
-				</td>
-				<td>
-					120
-				</td>
-				<td>
-					1/9/2016
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="panel-container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				Puntuaciones mas altas de la semana (29/08/2016 - 04/09/2016)
+			</div> 
+			<table class="table">
+				<thead>
+					<th>
+						Posición
+					</th>
+					<th>
+						Usuario
+					</th>
+					<th>
+						Resultado
+					</th>
+					<th>
+						Fecha
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							user1
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2
+						</td>
+						<td>
+							user2
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							3
+						</td>
+						<td>
+							user3
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							4
+						</td>
+						<td>
+							user4
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							5
+						</td>
+						<td>
+							user5
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							6
+						</td>
+						<td>
+							user6
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							7
+						</td>
+						<td>
+							user7
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							8
+						</td>
+						<td>
+							user8
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							9
+						</td>
+						<td>
+							user9
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+					<tr>
+						<td>
+							10
+						</td>
+						<td>
+							user10
+						</td>
+						<td>
+							120
+						</td>
+						<td>
+							1/9/2016
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+    <style>
+    	.panel-container{
+    		margin-top: 20px;
+    	}
+
+    	.panel-default{
+    		border-color: black;
+    	}
+
+		.panel-default>.panel-heading{
+			background-color: #8fd206;
+			border-color: #000; 
+		}
+    	.panel {
+    		margin-left: 25%;
+    	}
+    </style>
 </body>
 </html>

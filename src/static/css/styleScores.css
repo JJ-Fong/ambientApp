@@ -1,6 +1,4 @@
-.table{
-	width: 100%;
-}
-.body{
-	font-size: 25px;
+.panel {
+	width:50%;
+	left: 25%;
 }
