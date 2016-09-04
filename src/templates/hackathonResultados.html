@@ -1,2 +1,48 @@
 {% include "hackathonHeader.html" %}
 
+<html>
+	<head>
+		
+	</head>
+
+	<body>
+		<div class="container content">
+			<div class="container">
+				<div class="wrapper">
+					<img class="world-complete" src="/static/img/World.png" alt="">
+				</div>
+				<div class="wrapper percentage-2">
+					<img class="world-percentage" src="/static/img/World.png" alt="">
+				</div>
+			</div>
+			<h4 class="resultado">
+				Si todos llevaramos tu mismo estilo de vida, necesitariamos 1.2 mundos!
+			</h4>
+			
+		</div>
+	</body>
+	
+	<style>
+	.content{
+		text-align: left;
+		margin-top: 100px;
+		align-content: center;
+	}
+
+	.resultado{
+		font-size: 35px;
+	}
+
+	.wrapper, img{
+		height: 150px;
+		width: 150px;
+		float: left;
+	}
+
+	.world-percentage{
+		position: absolute;
+		clip: rect(0px,60px,150px,0px);
+	}
+
+	</style>
+</html>
