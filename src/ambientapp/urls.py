@@ -15,9 +15,15 @@ Including another URLconf
     3. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
 from django.conf.urls import url, include
+from django.conf.urls.static import static
 from django.contrib import admin
+from django.conf import settings
+
 urlpatterns = [
     url(r'^ambientapp/', include("hackathon.urls")),
     url(r'^posts/', include("post.urls")),
     url(r'^admin/', admin.site.urls), 
 ]
+
+#if seetings.DEBUG:
+#    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

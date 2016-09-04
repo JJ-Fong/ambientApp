@@ -6,7 +6,9 @@ from .views import (
     hackathon_sign_up,
     hackathon_log_in,
     hackathon_log_out,
-    hackathon_hdc
+    hackathon_hdc,
+    hackathon_after_hdc,
+    
     ) 
 
 urlpatterns = [
@@ -16,5 +18,6 @@ urlpatterns = [
    	url(r'^log-out/$', hackathon_log_out),
     url(r'^sign-up/$', hackathon_sign_up),
     url(r'^mi-impacto/$', hackathon_hdc),
-
+    url(r'^resultado/$', hackathon_after_hdc),
+       
 ]

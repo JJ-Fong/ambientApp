@@ -79,10 +79,17 @@ def hackathon_log_in(request):
 
 def hackathon_log_out(request):
 	context = {}
-	logout(request)
+	logout(request)	
 	return redirect("/ambientapp/home")
 
 
 def hackathon_hdc(request):
 	context = {}
+	
 	return render(request, "hackathonHuellaCarbono.html", context)
+
+def hackathon_after_hdc(request):
+	context = {
+		"mundos": 1 
+	} 
+	return render(request, "hackathonResultados.html", context)
