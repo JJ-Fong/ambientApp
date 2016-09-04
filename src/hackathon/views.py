@@ -91,11 +91,11 @@ def hackathon_hdc(request):
 
 def hackathon_after_hdc(request):
 	context = {
-		"mundos": 1 
+		"mundos": 1.2
 	} 
 	return render(request, "hackathonResultados.html", context)
 
 def hackathon_high_scores(request):
 	context = {}
 
-	return render(render, "hackathon-high-scores.html", context)
+	return render(request, "hackathon-high-scores.html", context)
