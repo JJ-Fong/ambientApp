@@ -85,7 +85,8 @@ def hackathon_log_out(request):
 
 def hackathon_hdc(request):
 	context = {}
-	
+	if (request.method == "POST"):
+		return redirect("/ambientapp/resultado")
 	return render(request, "hackathonHuellaCarbono.html", context)
 
 def hackathon_after_hdc(request):
@@ -93,3 +94,8 @@ def hackathon_after_hdc(request):
 		"mundos": 1 
 	} 
 	return render(request, "hackathonResultados.html", context)
+
+def hackathon_high_scores(request):
+	context = {}
+
+	return render(render, "hackathon-high-scores.html", context)

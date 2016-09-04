@@ -8,7 +8,7 @@ from .views import (
     hackathon_log_out,
     hackathon_hdc,
     hackathon_after_hdc,
-    
+    hackathon_high_scores
     ) 
 
 urlpatterns = [
@@ -19,5 +19,5 @@ urlpatterns = [
     url(r'^sign-up/$', hackathon_sign_up),
     url(r'^mi-impacto/$', hackathon_hdc),
     url(r'^resultado/$', hackathon_after_hdc),
-       
+    url(r'^puntuaciones/$', hackathon_high_scores)      
 ]
