@@ -65,7 +65,7 @@ def hackathon_log_in(request):
 		user_by_email = authenticate(email = username, password = password)
 		if user_by_username is not None:
 			messages.success(request, "Bienvenido "+username)
-			login(request, user)
+			login(request, user_by_username)
 			return redirect("/ambientapp/home")
 		else:
 			if user_by_email is not None:
