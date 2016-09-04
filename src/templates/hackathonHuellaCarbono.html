@@ -45,164 +45,124 @@
       <div class="tittle">
         Mi Casa
       </div>
-      <div class="casa">
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta"> 
-                  ¿En qué zona vives? 
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="zona" min="1" max="25"/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuántas personas viven en tu casa?  
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="fam" min="1" max="25"/>  
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuánto tiempo tardas en bañarte?  
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="time" value="1">5 Minutos<br/>
-                  <input type="radio" name="time" value="2">10 Minutos<br/>
-                  <input type="radio" name="time" value="3">15 Minutos<br/>
-                  <input type="radio" name="time" value="4">20 Minutos<br/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuándo salgo de un cuarto apago la luz?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="luz">Sí<br/>
-                  <input type="radio" name="luz">No
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="image">
-          <img src="/static/img/casa.png">
+      <div class="section">
+        <div class="preguntas casa">
+
+            <div class="pregunta"> 
+              ¿En qué zona vives? 
+            </div>
+            <div class="respuesta">
+              <label>Respuesta: </label>
+              <input type="number" name="zona" min="1" max="25"/>
+            </div>
+
+            <div class="pregunta">
+              ¿Cuántas personas viven en tu casa?  
+            </div>
+            <div class="respuesta">
+              <label>Respuesta: </label>
+              <input type="number" name="fam" min="1" max="25"/>  
+            </div>
+
+            <div class="pregunta">
+              ¿Cuánto tiempo tardas en bañarte?  
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="time" value="1">5 Minutos<br/>
+              <input type="radio" name="time" value="2">10 Minutos<br/>
+              <input type="radio" name="time" value="3">15 Minutos<br/>
+              <input type="radio" name="time" value="4">20 Minutos<br/>
+            </div>
+
+            <div class="pregunta">
+              ¿Cuándo salgo de un cuarto apago la luz?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="luz">Sí<br/>
+              <input type="radio" name="luz">No
+            </div>
+            
+          </div>
+          <div class="image">
+            <img src="/static/img/casa.png">
+          </div>
         </div>
       </div>
     </div>
+
     <div>
-      <div class="tittle">
-        Mi Transporte
-      </div>
-      <div>
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuántos vehiculos hay en tu casa?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="number" name="autos" min="1" max="25"/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cómo llegas a la escuela?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="escuela">A pie o en bicicleta<br/>
-                  <input type="radio" name="escuela">Bus Escolar o Transporte Publico<br/>
-                  <input type="radio" name="escuela">En carro<br/>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="image">
-          <img src="/static/img/auto.png">
+      <div class="section">
+        
+        <div class="preguntas transporte">
+
+            <div class="pregunta">
+              ¿Cuántos vehiculos hay en tu casa?
+            </div>
+            <div class="respuesta">
+              <label>Respuesta: </label>
+              <input type="number" name="autos" min="1" max="25"/>
+            </div>
+
+            <div class="pregunta">
+              ¿Cómo llegas a la escuela?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="escuela">A pie o en bicicleta<br/>
+              <input type="radio" name="escuela">Bus Escolar o Transporte Publico<br/>
+              <input type="radio" name="escuela">En carro<br/>
+            </div>
+
+          </div>
+          <div class="image">
+            <img src="/static/img/auto.png">
+          </div>
         </div>
       </div>
     </div>
+
     <div>
       <div class="tittle">
         Mi Alimentación
       </div>
       <div class="alimentos">
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Qué tan seguido comes frutas y verduras?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="fruta">Todos los días<br/>
-                  <input type="radio" name="fruta">De vez en cuando<br/>
-                  <input type="radio" name="fruta">Pocas veces<br/>
-                  <input type="radio" name="fruta">Nunca<br/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Qué tan seguido comes comida rapida?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="comida">Todos los días<br/>
-                  <input type="radio" name="comida">De vez en cuando<br/>
-                  <input type="radio" name="comida">Pocas veces<br/>
-                  <input type="radio" name="comida">Nunca<br/>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Que tan seguido comes comida enlatada?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="enlata">Todos los días<br/>
-                  <input type="radio" name="enlata">De vez en cuando<br/>
-                  <input type="radio" name="enlata">Pocas veces<br/>
-                  <input type="radio" name="enlata">Nunca<br/>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="image">
-          <img src="/static/img/comida.png">
+        <div class="section">
+          <div class="preguntas comida">
+
+            <div class="pregunta">
+              ¿Qué tan seguido comes frutas y verduras?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="fruta">Todos los días<br/>
+              <input type="radio" name="fruta">De vez en cuando<br/>
+              <input type="radio" name="fruta">Pocas veces<br/>
+              <input type="radio" name="fruta">Nunca<br/>
+            </div>
+
+            <div class="pregunta">
+              ¿Qué tan seguido comes comida rapida?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="comida">Todos los días<br/>
+              <input type="radio" name="comida">De vez en cuando<br/>
+              <input type="radio" name="comida">Pocas veces<br/>
+              <input type="radio" name="comida">Nunca<br/>
+            </div>
+
+            <div class="pregunta">
+              ¿Que tan seguido comes comida enlatada?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="enlata">Todos los días<br/>
+              <input type="radio" name="enlata">De vez en cuando<br/>
+              <input type="radio" name="enlata">Pocas veces<br/>
+              <input type="radio" name="enlata">Nunca<br/>
+            </div>
+
+          </div>
+
+          <div class="image">
+            <img src="/static/img/comida.png">
+          </div>
         </div>
       </div>
     </div>
@@ -211,38 +171,32 @@
         Mis Compras
       </div>
       <div>
-        <div class="preguntas">
-          <table>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuándo vas de compras utilizas bolsas de plastico?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="plastico">Sí<br/>
-                  <input type="radio" name="plastico">No
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="pregunta">
-                  ¿Cuándo usas hojas de papel las utilizas de ambos lados?
-                </div>
-              </td>
-              <td>
-                <div>
-                  <input type="radio" name="papel">Sí<br/> 
-                  <input type="radio" name="papel">No
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="image">
-          <img src="/static/img/dinero.png">
+        <div class="section">
+      
+          <div class="preguntas compras">
+
+            <div class="pregunta">
+              ¿Cuándo vas de compras utilizas bolsas de plastico?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="plastico">Sí<br/>
+              <input type="radio" name="plastico">No
+            </div>
+
+            <div class="pregunta">
+              ¿Cuándo usas hojas de papel las utilizas de ambos lados?
+            </div>
+            <div class="respuesta">
+              <input type="radio" name="papel">Sí<br/> 
+              <input type="radio" name="papel">No
+            </div>
+
+          </div>
+
+          <div class="image">
+            <img src="/static/img/dinero.png">
+          </div>
+
         </div>
       </div>
       <button id="send-button">Enviar</button>
