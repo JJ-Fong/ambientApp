@@ -48,41 +48,59 @@
       <div class="section">
         <div class="preguntas casa">
 
-            <div class="pregunta"> 
-              ¿En qué zona vives? 
-            </div>
-            <div class="respuesta">
-              <label>Respuesta: </label>
-              <input type="number" name="zona" min="1" max="25"/>
-            </div>
-
-            <div class="pregunta">
-              ¿Cuántas personas viven en tu casa?  
-            </div>
-            <div class="respuesta">
-              <label>Respuesta: </label>
-              <input type="number" name="fam" min="1" max="25"/>  
-            </div>
-
-            <div class="pregunta">
-              ¿Cuánto tiempo tardas en bañarte?  
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="time" value="1">5 Minutos<br/>
-              <input type="radio" name="time" value="2">10 Minutos<br/>
-              <input type="radio" name="time" value="3">15 Minutos<br/>
-              <input type="radio" name="time" value="4">20 Minutos<br/>
-            </div>
-
-            <div class="pregunta">
-              ¿Cuándo salgo de un cuarto apago la luz?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="luz">Sí<br/>
-              <input type="radio" name="luz">No
-            </div>
-            
+          <div class="pregunta"> 
+            ¿En qué zona vives? 
           </div>
+          <div class="respuesta">
+            <label>Respuesta: </label>
+            <input type="number" name="zona" min="1" max="25"/>
+          </div>
+
+          <div class="pregunta">
+            ¿Cuántas personas viven en tu casa?  
+          </div>
+          <div class="respuesta">
+            <label>Respuesta: </label>
+            <input type="number" name="fam" min="1" max="25"/>  
+          </div>
+
+          <div class="pregunta">
+            ¿Cuánto tiempo tardas en bañarte?  
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">5 Minutos
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">10 Minutos
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">15 Minutos
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">20 Minutos
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="pregunta">
+            ¿Cuándo salgo de un cuarto apago la luz?
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">Sí
+              <input type="radio" name="luz"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">No
+              <input type="radio" name="luz"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+        </div>
           <div class="image">
             <img src="/static/img/casa.png">
           </div>
@@ -93,26 +111,35 @@
     <div>
       <div class="section">
         
-        <div class="preguntas transporte">
+       <div class="preguntas transporte">
 
-            <div class="pregunta">
-              ¿Cuántos vehiculos hay en tu casa?
-            </div>
-            <div class="respuesta">
-              <label>Respuesta: </label>
-              <input type="number" name="autos" min="1" max="25"/>
-            </div>
-
-            <div class="pregunta">
-              ¿Cómo llegas a la escuela?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="escuela">A pie o en bicicleta<br/>
-              <input type="radio" name="escuela">Bus Escolar o Transporte Publico<br/>
-              <input type="radio" name="escuela">En carro<br/>
-            </div>
-
+          <div class="pregunta">
+            ¿Cuántos vehiculos hay en tu casa?
           </div>
+          <div class="respuesta">
+            <label>Respuesta:</label>
+            <input type="number" name="autos" min="1" max="25"/>
+          </div>
+
+          <div class="pregunta">
+            ¿Cómo llegas a la escuela?
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">A Pie o en Bicicleta
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Bus Escolar o Transporte Publico
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">En Carro
+              <input type="radio" name="time"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+        </div>
           <div class="image">
             <img src="/static/img/auto.png">
           </div>
@@ -128,37 +155,73 @@
         <div class="section">
           <div class="preguntas comida">
 
-            <div class="pregunta">
-              ¿Qué tan seguido comes frutas y verduras?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="fruta">Todos los días<br/>
-              <input type="radio" name="fruta">De vez en cuando<br/>
-              <input type="radio" name="fruta">Pocas veces<br/>
-              <input type="radio" name="fruta">Nunca<br/>
-            </div>
-
-            <div class="pregunta">
-              ¿Qué tan seguido comes comida rapida?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="comida">Todos los días<br/>
-              <input type="radio" name="comida">De vez en cuando<br/>
-              <input type="radio" name="comida">Pocas veces<br/>
-              <input type="radio" name="comida">Nunca<br/>
-            </div>
-
-            <div class="pregunta">
-              ¿Que tan seguido comes comida enlatada?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="enlata">Todos los días<br/>
-              <input type="radio" name="enlata">De vez en cuando<br/>
-              <input type="radio" name="enlata">Pocas veces<br/>
-              <input type="radio" name="enlata">Nunca<br/>
-            </div>
-
+          <div class="pregunta">
+            ¿Qué tan seguido comes frutas y verduras?
           </div>
+          <div class="respuesta">
+            <label class="control control--radio">Todos los días
+              <input type="radio" name="fruta"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">De vez en cuando
+              <input type="radio" name="fruta"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Pocas ceces
+              <input type="radio" name="fruta"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Nunca
+              <input type="radio" name="fruta"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="pregunta">
+            ¿Qué tan seguido comes comida rapida?
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">Todos los días
+              <input type="radio" name="comida"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">De vez en cuando
+              <input type="radio" name="comida"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Pocas veces
+              <input type="radio" name="comida"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Nunca
+              <input type="radio" name="comida"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="pregunta">
+            ¿Que tan seguido comes comida enlatada?
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">Todos los días
+              <input type="radio" name="enlata"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">De vez en cuando
+              <input type="radio" name="enlata"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Pocas veces
+              <input type="radio" name="enlata"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">Nunca
+              <input type="radio" name="enlata"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+        </div>
 
           <div class="image">
             <img src="/static/img/comida.png">
@@ -173,25 +236,37 @@
       <div>
         <div class="section">
       
-          <div class="preguntas compras">
+           <div class="preguntas compras">
 
-            <div class="pregunta">
-              ¿Cuándo vas de compras utilizas bolsas de plastico?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="plastico">Sí<br/>
-              <input type="radio" name="plastico">No
-            </div>
-
-            <div class="pregunta">
-              ¿Cuándo usas hojas de papel las utilizas de ambos lados?
-            </div>
-            <div class="respuesta">
-              <input type="radio" name="papel">Sí<br/> 
-              <input type="radio" name="papel">No
-            </div>
-
+          <div class="pregunta">
+            ¿Cuándo vas de compras utilizas bolsas de plastico?
           </div>
+          <div class="respuesta">
+            <label class="control control--radio">Sí
+              <input type="radio" name="plastico"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">No
+              <input type="radio" name="plastico"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+          <div class="pregunta">
+            ¿Cuándo usas hojas de papel las utilizas de ambos lados?
+          </div>
+          <div class="respuesta">
+            <label class="control control--radio">Sí
+              <input type="radio" name="papel"/>
+              <div class="control__indicator"></div>
+            </label>
+            <label class="control control--radio">No
+              <input type="radio" name="papel"/>
+              <div class="control__indicator"></div>
+            </label>
+          </div>
+
+        </div>
 
           <div class="image">
             <img src="/static/img/dinero.png">
@@ -199,7 +274,9 @@
 
         </div>
       </div>
-      <button id="send-button">Enviar</button>
+      <div class="boton">
+        <button class="btn" id="send-button">Enviar</button>
+      </div>
     </div>
   </section>
   </form>
