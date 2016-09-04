@@ -102,3 +102,35 @@
   border-radius: 50%;
   background: #fff;
 }
+
+.boton{
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #8ed206;
+  background-image: -webkit-linear-gradient(top, #8fd206, #abf708);
+  background-image: -moz-linear-gradient(top, #8fd206, #abf708);
+  background-image: -ms-linear-gradient(top, #8fd206, #abf708);
+  background-image: -o-linear-gradient(top, #8fd206, #abf708);
+  background-image: linear-gradient(to bottom, #8ef206, #abf708);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #0abf70;
+  background-image: -webkit-linear-gradient(top, #abf708, #8ef206);
+  background-image: -moz-linear-gradient(top, #abf708, #8ef206);
+  background-image: -ms-linear-gradient(top, #abf708, #8ef206);
+  background-image: -o-linear-gradient(top, #abf708, #8ef206);
+  background-image: linear-gradient(to bottom, #abf708, #8ef206);
+  text-decoration: none;
+}
